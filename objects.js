@@ -1,10 +1,12 @@
 let car = "Peugeot"; // one value assigned to a variable
 
+const newCar = {type: "McLaren", weight: 1200, wheels: 4}; // 3 values assigned to a variable
+
 const person = { // several values assigned to a variable
     firstName: "Jonah", // properties
     lastName: "Theussl", // written as name:value pairs
     fullName: function() {
-        return this.firstName + " " + this.lastName // this refers to the person object
+        return this.firstName + " " + this.lastName // "this" refers to the person object
     },
     age: 18, 
     eyeColour: "Brown",
