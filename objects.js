@@ -6,7 +6,7 @@ const person = { // several values assigned to a variable
     firstName: "Jonah", // properties
     lastName: "Theussl", // written as name:value pairs
     fullName: function() {
-        return this.firstName + " " + this.lastName // "this" refers to the person object
+        return this.firstName + " " + this.lastName // "this" refers to the "person" object
     },
     age: 18, 
     eyeColour: "Brown",
@@ -28,7 +28,7 @@ const person = { // several values assigned to a variable
 
 console.log(person);
 
-//accessing object properties
+//accessing object properties two ways
 console.log(person.age);
 console.log(person["secondNationality"]);
 console.log(person.fullName()) // accessing an object method
