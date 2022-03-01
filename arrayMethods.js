@@ -61,3 +61,13 @@ console.log(names);
     - The splice() method adds new items to an array
     - The slice() method slices out a piece of an array
 */
+const cars = ["Volvo", "BMW", "Fiat"];
+cars.splice(2, 0, "Renault", "Peugeot");
+console.log(cars);
+// The first parameter (2) defines where new elements should be added.
+// The second parameter (0) defines how many elements should be removed.
+// The rest defines the new parameters to be added.
+
+// The splice() method returns an array with the deleted items.
+cars.splice(2, 2, "Mercedes", "Audi");
+console.log(cars);
