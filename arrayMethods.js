@@ -32,16 +32,13 @@ console.log(fruits);
 console.log(fruits.shift());
 
 // The unshift() method adds a new element to an array, and unshifts older elements:
-
 fruits.unshift("Pear");
 console.log(fruits);
 
 // The unshift method returns the new array length:
-
 console.log(fruits.unshift());
 
 // Access array elements using their imndex numbers starting from 0:
-
 const veggies = ["Cucumber", "Raddish", "Carrot"];
 veggies[0] = "Tomato";
 console.log(veggies);
@@ -71,3 +68,11 @@ console.log(cars);
 // The splice() method returns an array with the deleted items.
 cars.splice(2, 2, "Mercedes", "Audi");
 console.log(cars);
+
+// splice() can be used to remove elements without leaving "holes":
+cars.splice(0, 1);
+console.log(cars);
+/*
+    The first parameter (0) defines the position where new elements should be added.
+    The second parameter (1) defines how many elements should be removed.
+*/

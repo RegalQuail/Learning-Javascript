@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {text-align: center; font-size: 24px;}
+</style>
+<body>
+    <button onclick="myFunction()">Randomize</button>
+    <p id="demo"></p>
+</body>
+<script>
+
+    const points = [ 100, 40, 25, 10, 5, 1 ];
+    document.getElementById("demo").innerHTML = points;
+
+    function myFunction() { // The Fisher Yates method of randomizing
+        for (let i = points.length - 1; i > 0; i--) {
+            let j = Math.floor(Math.random() * i)
+            let k = points[i]
+            points[i] = points[j]
+            points[j] = k
+        }
+        document.getElementById("demo").innerHTML = points;
+    }
+
+</script>
+</html>
