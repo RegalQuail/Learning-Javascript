@@ -76,3 +76,5 @@ console.log(cars);
     The first parameter (0) defines the position where new elements should be added.
     The second parameter (1) defines how many elements should be removed.
 */
+console.log(cars.slice(1));
+
